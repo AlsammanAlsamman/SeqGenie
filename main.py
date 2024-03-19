@@ -6,8 +6,6 @@ SeqDict = {
     "seq3": "ATCGATCGATCGATCGATCGATCGATCGATCG"
 }
 
-
-
 def getSeqLength(SeqDict):
     seqLength =  {}
     print(seqLength)
