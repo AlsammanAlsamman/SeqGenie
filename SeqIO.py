@@ -1,6 +1,9 @@
 import os
 import sys
 
+# Read a fasta file and return a dictionary with the sequences
+# file: the fasta file name and path
+# return: a dictionary with the sequences {seqid: {'info': 'header info', 'seq': 'sequence'}, ...}
 def readFasta(file):
     # >seq1 [species] [gene] [other]
     # ATCGATCGATCG
@@ -20,19 +23,30 @@ def readFasta(file):
     return sequences
 
 
-def writeFasta(sequences, outfile, blocksize=60, tensblock=False):
+def writeFasta(sequences, outfile, singline=False,blocksize=60, tensblock=False):
     with open(outfile, 'w') as f:
         for seqid, seqinfo in sequences.items():
             f.write('>' + seqid + ' ' + seqinfo['info'] + '\n')
-            for i in range(0, len(seqinfo['seq']), blocksize):
-                current_block = seqinfo['seq'][i:i+blocksize]
-                # split to 10s blocks
-                if tensblock:
-                    for j in range(0, len(current_block), 10):
-                        f.write(current_block[j:j+10] + ' ')
-                else:
-                    f.write(current_block)
+            if singline:
+                f.write(seqinfo['seq'] + '\n')
+            else:
+                for i in range(0, len(seqinfo['seq']), blocksize):
+                    current_block = seqinfo['seq'][i:i+blocksize]
+                    # split to 10s blocks
+                    if tensblock:
+                        for j in range(0, len(current_block), 10):
+                            f.write(current_block[j:j+10] + ' ')
+                    else:
+                        f.write(current_block)
                 f.write('\n')
+
+def create_seq(seqid, seqinfo, seq):
+    if seqid != None and seqinfo != None and seq != None:
+        return {seqid: {'info': seqinfo, 'seq': seq}}
+    else:
+        # throw an error and return na
+        print('Error: seqid, seqinfo and seq must be provided', __name__, sys._getframe().f_code.co_name)
+        exit(1)
 
 if __name__ == '__main__':
     filename = sys.argv[1]
