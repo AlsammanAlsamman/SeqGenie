@@ -15,7 +15,6 @@ class Seq:
             exit(1)
 
 
-
 if __name__ == '__main__':
     filename = sys.argv[1]
     seq = Seq( seqInfo='[species] [gene] [other]', seq='ATCGATCGATCG')
