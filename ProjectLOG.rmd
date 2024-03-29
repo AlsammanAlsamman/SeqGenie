@@ -53,7 +53,7 @@
 #   - Complement
 #   - Transcription
 #   - Translation
-#   - ORF
+#   - ORF / Open reading frames
 #   - Codon usage
 #   - Protein properties
 #   - Extraction of specific regions
