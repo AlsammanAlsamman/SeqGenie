@@ -1,0 +1,126 @@
+# The basics of creating in bioinformatics
+
+# Structure of programming languages
+# - Variables
+# - Data types (int, float, string, list, dictionary)
+# - Control structures (if, for, while)
+# - Functions
+# - Classes and objects
+# - Modules
+# - Exceptions
+# - File I/O
+# - Regular expressions
+# - Error handling
+
+# bioinformatician are two types:
+# - Biologist only use bioinformatics tools , and use python to write scripts to automate the tools
+# - Computer scientist who use bioinformatics data to develop new algorithms and tools for bioinformatics
+
+# bioinformatics tools types:
+# - GUI-based tools (Graphical User Interface) ( EXE / Excutables)
+# - Command-line tools
+# - Web-based tools (APIs) (Application Programming Interface)
+# - Programming libraries
+
+# Most commanon programming languages used in bioinformatics:
+# - C / C++ (fast and efficient) (Alot of algorithms are written in C/C++) and can used in python or R to extend the functionality
+# - Python (easy to learn and use) (most popular language in bioinformatics) - GTK, PyQT, Tkinter, wxPython
+# - R (statistical analysis) (Bioconductor) and visualization (ggplot2, lattice, plotly)
+# - Javascript (web-based tools) (Node.js, React, Angular, Vue.js, Next.js)
+
+
+# According to complexity there are two types of bioinformatics projects:
+# - Remaking or training tools
+# - Simple tools , which are used to perform a single task and visualize the results or pipeline of tasks
+# - Complex tools, which are used to perform multiple tasks, application of algorithms or statistical analysis
+
+# Steps for producing new bioinformatics tools:
+# - Define the problem , choose very simple problem
+# - Define the input and output
+# - Define the algorithm (step by step)
+# - Write the code
+# - Test the code (pre-known output)
+# - Optimize the code (speed, memory)
+# - Document the code
+# - Share the code (github)
+
+# Two Ideas for bioinformatics tools:
+# - A tool to report information of a given DNA sequences icluding:
+#   - Length of the sequence
+#   - GC content
+#   - Number of A, T, C, G
+#   - Reverse
+#   - Complement
+#   - Transcription
+#   - Translation
+#   - ORF
+#   - Codon usage
+#   - Protein properties
+#   - Extraction of specific regions
+#   - Extraction of specific motifs
+#   - Extraction of specific IDs
+#   - Extraction of specific Species
+#   - Extraction of specific Genes
+#   - Selection of sequnces based on criteria
+#   - Alignment of sequences
+
+
+# - B tool to handle aligned sequences:
+#   - Read the alignment
+#   - Statistics of the alignment including:
+#     - Number of sequences
+#     - Length of the alignment
+#     - Number of gaps
+#     - Number of conserved sites
+#     - Number of variable sites
+#     - Number of unique sites
+#   - Write the alignment
+#   - Remove gaps
+#   - Calculate the distance matrix
+
+
+# How to start programming :
+# - Choose a programming language (Python)
+
+# Program structure:
+# - Reading the input
+# - Processing the input
+# - Writing the output
+
+# Files structure:
+# - Main file (main.py)
+# - Classes file (classes.py)
+# - Functions file (Module) (functions.py)
+
+# This Week Tasks:
+#  - Create Function to read DNA sequence from a file
+
+# input: FASTA file
+
+```{r}
+    #>seq1 [species=human] [gene=BRCA1] [chromosome=17] [length=1000]
+    #ATCGATCGATCGATCGATCGATCGATCGATCG
+    #>seq2
+    #ATCGATCGATCGATCGATCGATCGATCGATCG
+    #>seq3
+    #ATCGATCGATCGATCGATCGATCGATCGATCG
+```
+
+# basic structure of data type
+```{python}
+
+SeqDict = {
+    "seq1": "ATCGATCGATCGATCGATCGATCGATCGATCG",
+    "seq2": "ATCGATCGATCGATCGATCGATCGATCGATCG",
+    "seq3": "ATCGATCGATCGATCGATCGATCGATCGATCG",
+    "seq4": "ATCGATCGATCGATCGATCGATCGATCGATCG",
+}
+
+print(SeqDict["seq1"])
+
+
+```
+# Tools to dignose the code:
+# - print
+# - assert
+
