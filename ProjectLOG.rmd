@@ -64,7 +64,6 @@
 #   - Selection of sequnces based on criteria
 #   - Alignment of sequences
 
-
 # - B tool to handle aligned sequences:
 #   - Read the alignment
 #   - Statistics of the alignment including:
@@ -78,7 +77,6 @@
 #   - Remove gaps
 #   - Calculate the distance matrix
 
-
 # How to start programming :
 # - Choose a programming language (Python)
 
@@ -89,8 +87,8 @@
 
 # Files structure:
 # - Main file (main.py)
-# - Classes file (classes.py)
-# - Functions file (Module) (functions.py)
+# - Classes files (classes.py)
+# - Functions files (Module) (functions.py)
 
 # This Week Tasks:
 #  - Create Function to read DNA sequence from a file
@@ -124,3 +122,14 @@ print(SeqDict["seq1"])
 # - print
 # - assert
 
+
+# Programming expressions
+# - object : a data structure that contains data and functions , sometinh like person that contains name, age, height, weight, etc
+# - casting : converting data from one type to another
+# - environment variables : variables that are defined in the system and can be used in the code
+# - oop : object oriented programming
+# - append : add an element to a list / dictionary/ set/file
+# - \n : new line
+# - \t : tab
+# - indexing : accessing an element in a list  with a specific index (0-based)
+# - RAM : Random Access Memory
