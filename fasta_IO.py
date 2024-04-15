@@ -19,3 +19,10 @@ def getSequencesLength(sequences):
     for seqid in sequences:
         seqLength[seqid] = len(sequences[seqid]["sequence"])
     return seqLength
+
+def searchHeader(sequences, pattern):
+    subSequences = {}
+    for seqid in sequences:
+        if pattern in sequences[seqid]["header"]:
+            subSequences[seqid] = sequences[seqid]
+    return subSequences
